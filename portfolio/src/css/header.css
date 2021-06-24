@@ -1,0 +1,13 @@
+#navbar {
+    background: rgb(237,237,232);
+    background: linear-gradient(120deg, rgba(237,237,232,0.5) 20%, rgba(131,138,138,0.3) 100%);
+    box-shadow: 1px 1px 1px rgba(131,138,138,0.5)
+}
+
+#name-title {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    color: #184c4d;
+    
+}
+
