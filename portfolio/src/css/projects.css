@@ -34,8 +34,13 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-#main-project, #other-projects-row {
+#other-projects-row {
     width: 100%
+}
+
+#main-project {
+    width: 800px;
+    margin-left: 10px;
 }
 
 .main-project-box, .sub-project {
@@ -43,8 +48,46 @@
     width: 100%;
     height: 100%;
     border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.other-projects {
+    margin-top: 20px;
+}
+
+.project-description {
+    width: 75%;
+    background-color: #F6F6F3;
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px;
+    margin: 10px 0px 10px 5px;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .main-project-box:hover, .sub-project:hover {
-    color: red;
+    color: #1DC0C3;
+}
+
+#moviego {
+    background-image: url("./images/moviegosnip.JPG");
+}
+
+#spotifyproject {
+    background-image: url("./images/playlistprojectsnip.JPG")
+
+}
+
+#stagecoach {
+    background-image: url("./images/stagecoachsnip.JPG");
+    height: 200px;
+    
+}
+
+
+#main-project, .other-projects {
+    color: #313535;
 }
