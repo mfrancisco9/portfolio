@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bd6db9aa.chunk.css",
+    "main.js": "/portfolio/static/js/main.5fa7844c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5fa7844c.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
+    "static/js/2.48a54330.chunk.js": "/portfolio/static/js/2.48a54330.chunk.js",
+    "static/js/2.48a54330.chunk.js.map": "/portfolio/static/js/2.48a54330.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.bd6db9aa.chunk.css.map": "/portfolio/static/css/main.bd6db9aa.chunk.css.map",
+    "static/js/2.48a54330.chunk.js.LICENSE.txt": "/portfolio/static/js/2.48a54330.chunk.js.LICENSE.txt",
+    "static/media/projects.css": "/portfolio/static/media/stagecoachsnip.342b0c37.JPG",
+    "static/media/contactbox.css": "/portfolio/static/media/scribble_light.7f3d3195.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76232b81.js",
+    "static/js/2.48a54330.chunk.js",
+    "static/css/main.bd6db9aa.chunk.css",
+    "static/js/main.5fa7844c.chunk.js"
+  ]
+}
