@@ -1,93 +1,17 @@
-.main-box {
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px;
-    width: 70vw;
-    height: 90%;
-    background-color: #EDEDE8;
-    position: relative;
-    border-radius: 3px;
-    box-shadow: 1px 2px 1px #838A8A;
-}
-/* psuedo class used to give opacity to background image */
-.main-box::before {    
-    content: "";
-    background-image: url("./images/scribble_light.png");
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-}
-
-#box-content {
-    opacity: 1.00 !important;
-}
 #projects {
-    padding-bottom: 50px;
+ 
 }
 
-#box-content {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-#other-projects-row {
-    width: 100%
-}
-
-#main-project {
-    width: 800px;
-    margin-left: 10px;
-}
-
-.main-project-box, .sub-project {
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    box-sizing: border-box;
+#projects-box {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
-.other-projects {
-    margin-top: 20px;
+.projects-col {
+    margin-bottom: 25px;
 }
 
-.project-description {
-    width: 75%;
-    background-color: #F6F6F3;
-    border-radius: 1px;
-    box-shadow: 1px 1px 1px;
-    margin: 10px 0px 10px 5px;
-    padding: 5px;
-    font-size: 12px;
-}
-
-.main-project-box:hover, .sub-project:hover {
-    color: #1DC0C3;
-}
-
-#moviego {
-    background-image: url("./images/moviegosnip.JPG");
-}
-
-#spotifyproject {
-    background-image: url("./images/playlistprojectsnip.JPG")
-
-}
-
-#stagecoach {
-    background-image: url("./images/stagecoachsnip.JPG");
-    height: 200px;
-    
-}
-
-
-#main-project, .other-projects {
-    color: #313535;
+.projects-description {
+    text-decoration: none;
+    color: black;
 }

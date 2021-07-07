@@ -1,40 +1,43 @@
-import React from 'react'
-import '../css/projects.css'
+import React from "react";
+import "../css/projects.css";
 
-export default function Projects() {
-    return (
-        <div className="container-fluid main-box" id="projects">
-            <div id="box-content">
+export default function Projects({ changeCircle }) {
+  return (
+    <div className="container-fluid main-box" id="projects">
+      <div id="projects-box">
+        <h3>Projects</h3>
 
-                <a id="main-project" className="row" href="https://northwestern-stagecoach.herokuapp.com/">
-                    <span>Stagecoach</span>
-                    <div className="main-project-box col-12" id="stagecoach">
-                        <div className="project-description">Final project for Northwestern's coding bootcamp. A theoretical platform that allows small artists and venues to create profiles and book concerts.</div>
-                    </div>
-                </a>
-
-                <div className="row" id="other-projects-row">
-                    <a className="other-projects col-4" href="https://github.com/loveliiivelaugh/spotify-community"><span>Spotify Playlist Project</span>
-                        <div className="sub-project" id="spotifyproject">
-                            <div className="project-description">Second project for Northwestern's coding bootcamp. Uses Spotify's API to give users greater control of music discovery and playlist generation.</div>
-                        </div>
-                    </a>
-
-                    <a className="other-projects col-4" href="https://melanieuhrich.github.io/MovieGO/"><span>MovieGo</span>
-                        <div className="sub-project" id="moviego">
-                            <div className="project-description">First project for Northwestern's coding bootcamp. Utilizes basic HTML, CSS, and Javascript to create customized movie recommendations using the TMDb API.</div>
-                        </div>
-                    </a>
-
-                    <a className="other-projects col-4" href="https://github.com/mfrancisco9?tab=repositories">Homework, smaller projects, works in progress
-                        <div className="sub-project">
-                            <div className="project-description">Additional work can be found on GitHub.</div>
-                        </div>
-                    </a>
-
-                </div>
-
+        <div className="projects-col" onMouseEnter={()=> changeCircle("https://i.imgur.com/0pQr5ha.jpg")}>
+            <a href="https://northwestern-stagecoach.herokuapp.com/" className="project-title">Stagecoach</a>
+            <div className="project-description">
+              Final project for Northwestern's coding bootcamp. A theoretical
+              platform that allows small artists and venues to create profiles
+              and book concerts. Utilizes React, SQL, and Express.
             </div>
-        </div>
-    )
+          </div>
+
+          <div className="projects-col" onMouseEnter={()=> changeCircle("https://i.imgur.com/mty71zZ.jpg")}>
+            <a href="https://spotify-community.herokuapp.com/" className="project-title">Spotify Playlist Project</a>
+            <div className="project-description">
+            Second project for Northwestern's coding bootcamp. Uses Spotify's API to give users greater control of music discovery and playlist generation. Technologies used include SQL, OAuth, Express, and Spotify Dev Tools.
+            </div>
+          </div>
+
+          <div className="projects-col" onMouseEnter={()=> changeCircle("https://i.imgur.com/W5fd8Dq.jpg")}>
+            <a href="https://melanieuhrich.github.io/MovieGO/" className="project-title">MovieGo</a>
+            <div className="project-description">
+            First project for Northwestern's coding bootcamp. Utilizes basic HTML, CSS, and Javascript to create customized movie recommendations using the TMDb API.
+            </div>
+          </div>
+
+          <div className="projects-col" onMouseEnter={()=> changeCircle("https://i.imgur.com/KSrceNz.jpg")}>
+            <a href="https://mfrancisco9.github.io/coffee-dialer/" className="project-title">Coffee Dialer</a>
+            <div className="project-description">
+              A simple dashboard for coffee brewing created with React. Saves past entries in local storage and provides recommendations for a better cup.
+            </div>
+          </div>
+
+      </div>
+    </div>
+  );
 }

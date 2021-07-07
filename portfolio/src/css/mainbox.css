@@ -1,29 +1,4 @@
-.main-box {
+.sections {
+    font-size: 14px;
     margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px;
-    width: 70vw;
-    height: 90%;
-    background-color: #EDEDE8;
-    position: relative;
-    border-radius: 3px;
-    box-shadow: 1px 2px 1px #838A8A;
-}
-/* psuedo class used to give opacity to background image */
-.main-box::before {    
-    content: "";
-    background-image: url("./images/scribble_light.png");
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-
-}
-
-#box-content {
-    opacity: 1.00 !important;
 }
