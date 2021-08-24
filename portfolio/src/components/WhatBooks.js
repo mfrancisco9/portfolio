@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import "../css/whatbooks.css";
 
 // images
-// import Barthelme from '../images/barthelme-stories.jpg'
+import Barthelme from '../images/barthelme-stories.jpg'
 import Zaitoun from '../images/zaitoun.jpg'
 import Shipton from '../images/shipton_jazz.jpg'
 import DesignPatterns from '../images/javascript-design-patterns.jpg'
 
 export default function WhatBooks() {
+
+    const [bookFocus, setBookFocus] = useState({});
 
     let books = [
         {
@@ -15,7 +17,7 @@ export default function WhatBooks() {
             author: "Donald Barthelme",
             year: 2021,
             publisher: "The Library of America",
-            image: null,
+            image: Barthelme,
             blurb: "aloo"
         },
         {
@@ -43,12 +45,22 @@ export default function WhatBooks() {
             blurb: "javoooo"
         }]
 
+    const bookClick = (e, book) => {
+        console.log(e.target.value)
+    }
+
     const makeBooks = (arr) => {
         let books = []
         for (let i = 0; i < arr.length; i++) {
             books.push(arr[i])
         }
-        return books.map(book => <div className="book-card">{book}</div>)
+        return books.map(book => <div 
+            className="book-card" 
+            style={{backgroundImage: `url(${book.image})`}}
+            onClick={(e) => {
+                bookClick(e)
+                setBookFocus({...book})
+            }}></div>)
 
     }
 
@@ -57,9 +69,12 @@ export default function WhatBooks() {
         <div className="misc-div" id="what-books">
             <div id="what-books-row">
                 <div id="what-books-col-left">
-                    {makeBooks(book)}
+                    {makeBooks(books)}
                 </div>
-                <div id="what-books-col-right"></div>
+                <div id="what-books-col-right">
+                    <span id="book-title">
+                    </span>
+                </div>
             </div>
         </div>
     )

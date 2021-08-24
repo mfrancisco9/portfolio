@@ -1,5 +1,6 @@
 #what-books {
     background-color: red;
+    height: 105vh;
 }
 
 #what-books-row {
@@ -39,4 +40,5 @@
     height: 40%;
     text-align: center;
     border: 1px solid white;
+    background-size: contain;
 }
