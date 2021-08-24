@@ -6,6 +6,7 @@ import $ from "jquery";
 import Albums from './Albums';
 import CoolText from '../components/CoolText'
 import NiceDay  from '../components/NiceDay'
+import WhatBooks from '../components/WhatBooks'
 
 function Misc(props) {
 
@@ -24,6 +25,7 @@ function Misc(props) {
       <Albums />
       <CoolText />
       <NiceDay />
+      <WhatBooks />
     </div>
   );
 }

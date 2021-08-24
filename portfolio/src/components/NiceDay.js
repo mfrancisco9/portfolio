@@ -162,7 +162,9 @@ export default function NiceDay() {
       style={{ backgroundImage: `url(${Chicago})` }}
     >
       <div id="bg-layer-nice-day">
-        <div id="nice-day-main">{makeDays()}</div>
+      <div id="nice-day-description"><span id="nice-day-text-span">Is there a nice day for a bike ride any time soon?</span></div>
+        <div id="nice-day-main">
+          {makeDays()}</div>
       </div>
     </div>
   );
