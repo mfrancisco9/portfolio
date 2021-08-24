@@ -61,6 +61,7 @@ export default function Albums() {
     return (
 
         <div className="misc-div" id="top-albums">
+          <a name="albums"/>
         <div id="albums-main-description">
           some of my favorite albums from 2021:
         </div>

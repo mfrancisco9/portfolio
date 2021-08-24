@@ -21,7 +21,7 @@ function Misc(props) {
 
   return (
     <div>
-      <div id="misc-description">these are odds and ends that don't belong anywhere else, mostly with the intention of playing around with css.</div>
+      <div id="misc-description">Here are odds and ends that don't belong anywhere else, mostly buit with the intention of playing around with css. There's some <a href="#albums">music I've enjoyed lately</a>, an app to <a href="#cooltext">make neat text</a>, a <a href="#nicedayforaride">three-day bike forecast</a>, and some thoughts on <a href="#whatbooks">the books I'm currently reading</a>.</div>
       <Albums />
       <CoolText />
       <NiceDay />

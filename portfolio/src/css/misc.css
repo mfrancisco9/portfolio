@@ -21,7 +21,11 @@
  justify-content: center;  
 }
 
-
+#misc-description {
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
 
 @media only screen and (max-width: 1200px) {
     .album-image, .album-image-unfocus, .album-image-focus {

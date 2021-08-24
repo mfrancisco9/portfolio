@@ -1,44 +1,127 @@
 #what-books {
-    background-color: red;
-    height: 105vh;
+  height: 105vh;
+  border-top: 1px solid #002626;
+  background-color: white;
+  background-image: linear-gradient(
+    45deg,
+    rgba(252, 244, 197, 0.5),
+    rgba(204, 224, 220, 0.5)
+  );
 }
 
 #what-books-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 85%;
-    height: 90%;
-    border: 1px solid white;
-    margin-right: 15%;
-    margin-left: 5%;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 85%;
+  height: 90%;
+  margin-right: 15%;
+  margin-left: 5%;
+}
+
+#what-books-col-left-initial {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #what-books-col-left {
-    width: 35%;
+    width: 20%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
 #what-books-col-right {
-    width: 55%;
-
+  width: 70%;
+  display: flex;
+  flex-direction: row;
 }
 
-#what-books-col-left, #what-books-col-right {
- height: 90%;
- border: 1px solid white; 
+#what-books-col-left-initial,
+#what-books-col-right, #what-books-col-left {
+  height: 90%;
 }
 
-.book-card {
-    width: 40%;
-    height: 40%;
+
+.book-card-initial, .book-card-side {
     text-align: center;
-    border: 1px solid white;
     background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card-initial {
+  width: auto;
+  height: 25%;
+}
+
+.book-card-side {
+    height: auto;
+    max-height: 30%;
+}
+
+.book-card-side:hover, .book-card-initial:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.book-img:hover {
+
+    -webkit-filter: brightness(110%);
+
+}
+
+.book-img {
+  width: auto;
+  height: 100%;
+  float: left;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.book-card-hide {
+    display: none;
+}
+
+
+#book-details {
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#book-title {
+    font-size: 2em;
+}
+
+#book-main-img {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-left: 5%;
+}
+
+#book-main-img img{
+    max-width: 75%;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.33);
+
+}
+
+#book-blurb {
+    text-align: justify;
+    text-justify: inter-word;
 }

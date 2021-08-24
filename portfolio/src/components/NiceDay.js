@@ -156,6 +156,8 @@ export default function NiceDay() {
   }, []);
 
   return (
+    <div>
+            <a name="nicedayforaride"/>
     <div
       className="misc-div"
       id="nice-day"
@@ -166,6 +168,7 @@ export default function NiceDay() {
         <div id="nice-day-main">
           {makeDays()}</div>
       </div>
+    </div>
     </div>
   );
 }

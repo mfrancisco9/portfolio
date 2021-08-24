@@ -65,6 +65,7 @@ export default function CoolText() {
 
   return (
     <div className="misc-div" id="cool-text">
+      <a name="cooltext"/>
       <div id="cool-text-main">
         <div id="cool-text-options">
           <input

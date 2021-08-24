@@ -36,6 +36,13 @@ export default function Projects({ changeCircle }) {
               A simple dashboard for coffee brewing created with React. Saves past entries in local storage and provides recommendations for a better cup.
             </div>
           </div>
+
+          <div className="projects-col" onMouseEnter={()=> changeCircle("https://i.imgur.com/KSrceNz.jpg")}>
+            <a href="https://mfrancisco9.github.io/coffee-dialer/" className="project-title">Odds and Ends</a> 
+            <div className="project-description">
+              Various single-page works, created quickly with an emphasis on design.
+            </div>
+          </div>
       </div>
     </div>
   );
